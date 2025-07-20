@@ -12,9 +12,9 @@ export default function AboutContent() {
       viewport={{ once: true }}
     >
       <p className="text-lg">
-        I'm a passionate full-stack developer with <span className="text-cyan-400 font-semibold">2+ years</span> of 
+        {`I'm a passionate full-stack developer with`} <span className="text-cyan-400 font-semibold">2+ years</span> {` of 
         experience building modern web applications. My journey in tech is driven by curiosity and 
-        a constant desire to learn and innovate.
+        a constant desire to learn and innovate.`}
       </p>
       
       <p>
@@ -25,10 +25,10 @@ export default function AboutContent() {
       </p>
 
       <p>
-        When I'm not coding, you'll find me exploring new technologies, contributing to open source, 
+        {`When I'm not coding, you'll find me exploring new technologies, contributing to open source, 
         or sharing knowledge with the developer community. I believe in writing clean, maintainable 
         code that stands the test of time.
-      </p>
+      `}</p>
     </motion.div>
   )
 }

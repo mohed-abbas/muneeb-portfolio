@@ -172,7 +172,7 @@ export default function Header() {
                       onClick={() => setIsMobileMenuOpen(false)}
                       className="block mt-4 px-4 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-purple-500 text-white text-center font-medium"
                     >
-                      Let's Talk
+                      {"Let's Talk"}
                     </Link>
                   </motion.div>
                 </div>
