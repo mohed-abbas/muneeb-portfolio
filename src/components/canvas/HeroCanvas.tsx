@@ -1,7 +1,7 @@
 // src/components/canvas/HeroCanvas.tsx
 'use client'
 
-import { Suspense, useRef, useMemo } from 'react'
+import React, { Suspense, useRef, useMemo } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import {
   OrbitControls,
@@ -335,7 +335,7 @@ function ConnectionLines() {
   })
 
   const connections = useMemo(() => {
-    const result: JSX.Element[] = []
+    const result: React.ReactElement[] = [];
     const points = [
       new THREE.Vector3(0, 0, 0),
       new THREE.Vector3(6, 4, -3),
