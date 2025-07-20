@@ -1,6 +1,6 @@
 // src/components/ui/PageTransition.tsx
 'use client'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence, type Transition } from 'framer-motion'
 import { usePathname } from 'next/navigation'
 
 interface PageTransitionProps {
@@ -26,7 +26,7 @@ const pageVariants = {
   }
 }
 
-const pageTransition = {
+const pageTransition: Transition = {
   type: 'tween',
   ease: 'anticipate',
   duration: 0.4
