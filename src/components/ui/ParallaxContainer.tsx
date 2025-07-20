@@ -1,13 +1,13 @@
 // src/components/ui/ParallaxContainer.tsx
 'use client'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion, useScroll, useTransform, UseScrollOptions } from 'framer-motion'
 import { useRef, ReactNode } from 'react'
 
 interface ParallaxContainerProps {
   children: ReactNode
   speed?: number
   className?: string
-  offset?: [string, string]
+  offset?: UseScrollOptions['offset']
 }
 
 export default function ParallaxContainer({ 
