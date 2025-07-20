@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence, Variants } from 'framer-motion'
 import { navigationItems } from '../../content/navigation'
 import { Menu, X } from 'lucide-react'
 
@@ -29,7 +29,7 @@ export default function Header() {
     return null
   }
 
-  const navbarVariants = {
+  const navbarVariants: Variants = {
     hidden: { 
       y: -100, 
       opacity: 0,
