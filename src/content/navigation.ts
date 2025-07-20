@@ -9,32 +9,32 @@ export interface NavigationItem {
 export const navigationItems: NavigationItem[] = [
   { 
     name: 'Home', 
-    href: '/',
-    description: 'Welcome to my portfolio'
+    href: '#home',
+    description: 'Back to the top'
   },
   { 
     name: 'About', 
-    href: '/about',
+    href: '#about',
     description: 'Learn more about me'
   },
   { 
     name: 'Skills', 
-    href: '/skills',
+    href: '#skills',
     description: 'My technical expertise'
   },
   { 
     name: 'Projects', 
-    href: '/projects',
+    href: '#projects',
     description: 'Showcase of my work'
   },
   { 
     name: 'Experience', 
-    href: '/experience',
+    href: '#experience',
     description: 'My professional journey'
   },
   { 
     name: 'Contact', 
-    href: '/contact',
+    href: '#contact',
     description: 'Get in touch with me'
   },
 ]

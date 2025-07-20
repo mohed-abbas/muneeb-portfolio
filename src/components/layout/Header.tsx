@@ -51,7 +51,7 @@ export default function Header() {
   return (
     <AnimatePresence>
       <motion.header 
-        className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-6xl"
+        className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-fit"
         variants={navbarVariants}
         initial="hidden"
         animate="visible"
@@ -60,21 +60,6 @@ export default function Header() {
         {/* Glass suspended navbar */}
         <nav className="glass-effect rounded-2xl border border-white/10 shadow-2xl shadow-black/20 px-6 py-3 backdrop-blur-2xl bg-slate-950/30">
           <div className="flex items-center justify-between">
-            {/* Logo */}
-            <Link href="/" className="group">
-              <motion.div 
-                className="relative"
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.2 }}
-              >
-                <h1 className="text-xl font-bold text-white">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">
-                    Muneeb
-                  </span>
-                </h1>
-              </motion.div>
-            </Link>
-
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-1">
               {navigationItems.map((item, index) => (
@@ -104,30 +89,6 @@ export default function Header() {
                   </Link>
                 </motion.div>
               ))}
-            </div>
-
-            {/* CTA Button */}
-            <div className="hidden md:block">
-              <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.5 }}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Link
-                  href="/contact"
-                  className="relative px-5 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-purple-500 text-white text-sm font-medium transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/25 overflow-hidden group"
-                >
-                  <span className="relative z-10">Let's Talk</span>
-                  <motion.div 
-                    className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-purple-600"
-                    initial={{ x: "-100%" }}
-                    whileHover={{ x: 0 }}
-                    transition={{ duration: 0.3 }}
-                  />
-                </Link>
-              </motion.div>
             </div>
 
             {/* Mobile menu button */}

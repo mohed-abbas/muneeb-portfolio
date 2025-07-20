@@ -20,7 +20,7 @@ const HeroCanvas = dynamic(() => import('../canvas/HeroCanvas'), {
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with subtle grid pattern */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900/95 to-slate-950">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(34,211,238,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(34,211,238,0.02)_1px,transparent_1px)] bg-[size:120px_120px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
