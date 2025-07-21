@@ -2,6 +2,8 @@
 import HeroSection from '../components/sections/HeroSection'
 import AboutSection from '../components/sections/AboutSection'
 import SkillsSection from '../components/sections/SkillsSection'
+import ProjectsSection from '../components/sections/ProjectsSection'
+import { projectsData, getFeaturedProjects } from '../content/projects' // Assuming you have a data file for
 import Footer from '../components/layout/Footer'
 import Header from '../components/layout/Header'
 
@@ -21,7 +23,12 @@ export default function HomePage() {
         
         {/* Skills Section with parallax */}
         <SkillsSection />
-        
+
+        {/* Projects Section with 3D previews */}
+        <section className="relative min-h-screen">
+          <ProjectsSection projects={getFeaturedProjects()} />
+        </section>
+
         {/* Placeholder for future sections */}
         <section className="py-20 bg-slate-900/50 relative overflow-hidden">
           {/* Subtle 3D element */}
